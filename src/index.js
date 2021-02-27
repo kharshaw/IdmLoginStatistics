@@ -285,7 +285,7 @@ const processCommandLine = () => {
         let logins = {};
 
         // eslint-disable-next-line max-len
-        const dayFile = `..\\data\\logins.${currentDate.getFullYear()}_${currentDate.getMonth()+1}_${currentDate.getDate()}.json`;
+        const dayFile = `../data/logins.${currentDate.getFullYear()}_${currentDate.getMonth()+1}_${currentDate.getDate()}.json`;
 
         if (!fs.existsSync(dayFile)) {
             logins = await getDailyEventsAsync(currentDate, token);

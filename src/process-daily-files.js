@@ -26,7 +26,7 @@ const consolidateDailyFilesAsync = async (startDateString, endDateString) => {
 
     while (currentDate <= endDate) {
         // eslint-disable-next-line max-len
-        const filename = `..\\data\\logins.${currentDate.getFullYear()}_${currentDate.getMonth()+1}_${currentDate.getDate()}.json`;
+        const filename = `../data/logins.${currentDate.getFullYear()}_${currentDate.getMonth()+1}_${currentDate.getDate()}.json`;
 
         console.log(`reading ${filename}`);
 
